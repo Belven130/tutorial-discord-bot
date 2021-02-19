@@ -44,6 +44,10 @@ for(const file of commandFiles){
         client.commands.get('react').execute(message,args)
       } else if(command == 'clear'){
         client.commands.get('clear').run(message,args)
+      } else if(command == 'play'){
+        client.commands.get('play').execute(message,args,Discord)
+      } else if(command == 'leave'){
+        client.commands.get('leave').execute(message,args,Discord)
       }
     
   })
